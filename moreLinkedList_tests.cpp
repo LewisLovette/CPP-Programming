@@ -22,12 +22,9 @@ class LinkedList{
             Node * temp = new Node(data); //assign new memory for the new node
             if(head == NULL){
                 head = temp;
-            } 
-            else if(head->next == NULL){
-                head->next = temp;
-            } else{
+            }else{
                 Node * head2 = head;
-                    while(head2->next != NULL){  //stepping to end of list
+                while(head2->next != NULL){  //stepping to end of list
                     head2 = head2->next;
                 }
                 head2->next = temp;
